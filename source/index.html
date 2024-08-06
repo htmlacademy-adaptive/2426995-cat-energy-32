@@ -11,28 +11,32 @@
 
 <body class="page__body">
   <header class="header">
-    <ul class="heder__list">
-      <li class="heder__item">
 
-        <a href="#">
-          <img src="placeholder.jpg" alt="Логотип Кот Эенерджи" width="60" height="50">
-          <b>CAT</b>ENERGY
-          <span class="hidden">Логотип</span>
-        </a>
-      </li>
-      <li class="heder__item">Главная</li>
-      <li class="heder__item">Каталог продукции</li>
-      <li class="heder__item">Подбор программы</li>
-    </ul>
+    <a href="#">
+      <img src="placeholder.jpg" alt="Логотип Кот Эенерджи" width="60" height="50">
+      <h1 class="heder__logo"><b>CAT</b>ENERGY</h1>
+      <span class="hidden">Логотип</span>
+    </a>
+
+    <select class="nav__list" name="menu__list">
+      <option class="heder__item"><a href="#">Главная</a></option>
+      <option class="heder__item"><a href="#">Каталог продукции</a></option>
+      <option class="heder__item"><a href="#">Подбор программы</a></option>
+
+    </select>
+
   </header>
 
-  <main class="main">
+  <main class="main__page">
 
     <section class="content__page" name="Подбор программы">
+
       <h1 class="slogan__list">Функциональное питание для котов</h1>
       <p>Занялся собой? Займись котом!</p>
+
       <button class="button" type="button">подобрать программу</button>
-      <img src="placeholder.jpg" alt="Банка CAT ENERGY курица 500 грамм" width="709" height="609">
+
+      <img src="placeholder.jpg" alt="Банка CAT ENERGY курица 500 грамм" width="280" height="270">
     </section>
 
     <section class="content_prise">
@@ -40,14 +44,14 @@
         <li class="prise__item__link">
           <h2 class="container__prise">похудение</h2>
           <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <svg width="200" height="211"></svg>
+          <svg width="67" height="50" alt="Стройный силует кошки" src="placeholder.jpg"></svg>
 
           <a href="#">каталог slim <span class="hidden">-></span></a>
         </li>
         <li class="prise__item__link">
           <h2 class="container__prise">набор массы</h2>
           <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <svg alt="" width="200" height="211"></svg>
+          <svg width="67" height="50" alt="Массивный силует" src="placeholder.jpg"></svg>
 
           <a href="#">каталог pro <span class="hidden">-></span></a>
         </li>
@@ -56,7 +60,7 @@
       <h3 class="slogan_list">Как это работает</h3>
       <ul class="about__content__list">
         <li class="about__content__item">
-          <svg width="80" height="80"></svg>
+          <svg width="60" height="60" alt="Иконка Листа" src="placeholder.jpg"></svg>
 
           <p class="about__content__item__text">Функциональное питание
             содержит только полезные
@@ -65,21 +69,21 @@
         </li>
 
         <li class="about__content__item">
-          <svg width="80" height="80"></svg>
+          <svg width="60" height="60" src="placeholder.jpg" alt="Иконка кипящей воды"></svg>
           <p class="about__content__item__text">Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</p>
         </li>
 
         <li class="about__content__item">
-          <svg width="80" height="80"></svg>
+          <svg width="60" height="60" src="placeholder.jpg" alt="Иконка прием пищи"></svg>
           <p class="about__content__item__text">Замените один-два приема
             обычной еды на наше
             функциональное питание.</p>
         </li>
 
         <li class="about__content__item">
-          <svg width="80" height="80"></svg>
+          <svg width="60" height="60" src="placeholder.jpg" alt="Иконка времени"></svg>
           <p class="about__content__item__text">Уже через месяц наслаждайтесь
             изменениями к лучшему
             вашего питомца!</p>
@@ -90,7 +94,7 @@
 
     <section class="aside__content">
       <h3 class="slogan__list">Живой пример</h3>
-      <p class="aside__cat__boris">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+      <p class="aside__cat__boris">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <ul class="indicators__cat__list">
         <li class="indicators__cat__item">
           <div class="ponderosity__kg">
@@ -113,13 +117,20 @@
           </div>
         </li>
       </ul>
+      <div class="slaider__block__cat">
 
-      <img src="placeholder.jpg" width="560" height="512" alt="Пример кошка">
+        <img src="placeholder.jpg" width="560" height="512" alt="Стройная кошка">
+        <img src="placeholder.jpg" width="560" height="512" alt="Полная кошка">
+        <button class="button_slaider" type="button">
+          <span class="hidden">Скрол изображения кошки</span>
+        </button>
+      </div>
+
     </section>
 
     <section class="join__cooperate">
       <div class="add__cooperate">
-        <h3>приглашаем
+        <h3 class="welcom__cooperate__text">приглашаем
           к сотрудничеству
           дилеров!</h3>
 
@@ -129,8 +140,9 @@
 
           Санкт-Петербург</address>
       </div>
+
       <div class="map">
-        <img src="placeholder.img" width="786" height="400" alt="Отметка на карте как найти">
+        <img src="placeholder.img" width="786" height="400" alt="Отметка на карте как найти Нас">
       </div>
     </section>
   </main>
@@ -139,27 +151,29 @@
 
     <div class="footer__icon">
       <a href="#">
-        <svg class="index.html" width="128" height="24" alt="CAT ENERGY" src="placeholder.jpg"></svg>
+        <svg class="footer__logo" width="128" height="24" alt="CAT ENERGY" src="placeholder.jpg"></svg>
         <span class="hidden cat__energy__footer__icon">CAT ENERGY</span>
       </a>
     </div>
 
-    <ul class="footer__list">
+    <div class="social__block">
+      <ul class="footer__list__social">
 
-      <li class="footer__item"><a href="#"><span class="hidden vk__social">VK</span></a></li>
-      <li class="footer__item"><a href="#"><span class="hidden youtube__social">Youtube</span></a></li>
-      <li class="footer__item"><a href="#"><span class="hidden telegrem__social">Telegram</span></a></li>
+        <li class="footer__item__social"><a href="#"><span class="hidden vk__social">VK</span></a></li>
+        <li class="footer__item__social"><a href="#"><span class="hidden youtube__social">Youtube</span></a></li>
+        <li class="footer__item__social"><a href="#"><span class="hidden telegrem__social">Telegram</span></a></li>
 
-    </ul>
+      </ul>
+    </div>
 
     <div class="footer__item">
       <a href="#">
+        <p class="footer__text__html">HTML Academy</p>
         <svg class="html__academy__icon" alt=" Логотип HTML Academy" width="168" height="37" src="placeholder.jpg"></svg>
-        <span class="hidden html__academy">HTML Academy</span>
+        <span class="hidden html__academy"></span>
       </a>
     </div>
   </footer>
-
 </body>
 
 </html>
