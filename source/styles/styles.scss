@@ -5,3 +5,14 @@
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+
+
+body {
+  $bg-color: darkorange;
+  background-color: $bg-color;
+}
+
+// styles.scss
+body {
+  background-color: rebeccapurple;
+}
