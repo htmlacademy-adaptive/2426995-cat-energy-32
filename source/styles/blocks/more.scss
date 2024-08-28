@@ -1,0 +1,34 @@
+.more {
+  width: 320px;
+  height: 207px;
+}
+
+.more__link {
+  text-decoration: none;
+  border-left: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.more__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.more__text {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+}
