@@ -1,9 +1,32 @@
-.content-page {}
+.content-page {
+  font-family: "Oswald", sans-serif;
+}
 
-.content-page__priсe{}
+.content-page__price {
+  width: 249px;
+  height: 72px;
+  top: 27px;
+  left: 36px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  background-color: hsla(97, 53%, 47%, 0.85);
+}
 
-.content-page__slogan{}
+.content-page__slogan {
+  width: 198px;
+  height: 14px;
+  top: 124px;
+  left: 60px;
+}
 
-.content-page__button{}
-
-.content-page__image{}
+.content-page__button {
+  width: 153px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  background-color: hsla(97, 53%, 47%, 0.85);
+}
