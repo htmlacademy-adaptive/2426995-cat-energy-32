@@ -1,0 +1,63 @@
+.about-content {
+  width: 320px;
+  height: 659px;
+}
+
+.about-content__word {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+}
+
+.about-content__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #444444;
+}
+
+.about-content__box {
+  background-color: #ffffff;
+}
+
+.about-content__list {
+  width: hug (280px)px;
+  height: hug (70px)px;
+}
+
+.about-content__item {
+  background-color: #ffffff;
+}
+
+.about-content__underline {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #cdcdcd;
+}
+
+.about-content__result {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+}
+
+.about-content__outlay {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
