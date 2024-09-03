@@ -1,1 +1,19 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+body {
+  display: grid;
+  width: 320px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+.card__items {
+  margin-block: 0 0;
+}
