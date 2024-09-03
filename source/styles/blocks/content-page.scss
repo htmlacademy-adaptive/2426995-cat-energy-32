@@ -1,32 +1,79 @@
 .content-page {
   font-family: "Oswald", sans-serif;
+  display: grid;
+  background-image: url("../../images/index-background-cat-face@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 301px;
+  width: 320px;
+  height: 480px;
+  grid-template-columns: 280px;
+  grid-template-rows: 72px 14px 270px 40px;
+  row-gap: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.content-page::after {
+  content: "";
+  background-color: rgba(104, 183, 56, 0.85);
+  width: 320px;
+  height: 302px;
+  position: absolute;
+  z-index: 1;
+}
+
+
+.content-page__image {
+  position: relative;
+  padding-top: 40px;
+  padding-left: 20px;
+  z-index: 3;
+}
+
+.content-page__box {
+  background-size: 320px 502px;
 }
 
 .content-page__price {
-  width: 249px;
-  height: 72px;
-  top: 27px;
-  left: 36px;
+  display: block;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  color: #ffffff;
+  width: 249px;
+  height: 72px;
   text-align: center;
-  background-color: hsla(97, 53%, 47%, 0.85);
+  padding-left: 40px;
+  position: relative;
+  z-index: 2;
 }
 
 .content-page__slogan {
-  width: 198px;
-  height: 14px;
-  top: 124px;
-  left: 60px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  padding-top: 20px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
 }
 
+
 .content-page__button {
-  width: 153px;
-  height: 20px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   background-color: hsla(97, 53%, 47%, 0.85);
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 280px;
+  height: 40px;
+  position: relative;
+  top: 320px;
+  padding-top: 15px;
 }

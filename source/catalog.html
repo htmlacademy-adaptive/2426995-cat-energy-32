@@ -24,8 +24,13 @@
           <source media="(min-width:768px)" width="60" height="50" type="images/png" srcset="images/logo-tablet2x-heder@1x.jpg 1x, images/logo-tablet2x-heder@2x.jpg 2x">
           <img class="logo-header__logo-image" src="images/logo-mobile2x-heder@1x.jpg" srcset="images/logo-mobile2x-heder@2x.jpg" alt="Логотип Кот Эенерджи" width="33" height="38">
         </picture>
+        <picture>
+          <source media="(min-width:1440px)" width="101" height="18" srcset="images/CATENERGY@1x.jpg 1x, images/CATENERGY@2x.jpg 2x" type="images/jpg">
+          <source media="(min-width:768px)" width="101" height="18" srcset="images/CATENERGY@1x.jpg 1x, images/CATENERGY@2x.jpg 2x" type="images/jpg">
+          <img class="main-header__logo-img" width="101" height="18" src="images/CATENERGY@1x.jpg" alt="Логотип CATENERGY">
+        </picture>
         <span class="logo-header__logo-word hidden">
-          <em class="logo-header__em">CAT</em>ENERGY</span>
+          <em class="logo-header__em">CATENERGY</em></span>
       </a>
     </div>
 
@@ -35,8 +40,8 @@
       </button>
 
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#">Главная</a></li>
-        <li class="main-nav__item"><a href="#">Каталог продукции</a></li>
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
         <li class="main-nav__item"><a href="#">Подбор программы</a></li>
       </ul>
 
@@ -280,7 +285,7 @@
             <dt class="additional-products__package">1 упаковка (100 г)</dt>
             <dd class="additional-products__value">200 ₽</dd>
           </dl>
-          <div class="additional-products__button"><a href="#">Заказать</a></div>
+          <div class="additional-products__button"><a class=" additional-products__link" href="#">Заказать</a></div>
         </li>
 
         <li class="additional-products__item">
@@ -289,7 +294,9 @@
             <dt class="additional-products__package">5 литров</dt>
             <dd class="additional-products__value">50 ₽</dd>
           </dl>
-          <div class="additional-products__button"><a href="#">Заказать</a></div>
+          <div class="additional-products__button">
+            <a class="additional-products__link" href="#">Заказать</a>
+          </div>
         </li>
 
         <li class="additional-products__item">
@@ -298,7 +305,9 @@
             <dt class="additional-products__package">1 литр</dt>
             <dd class="additional-products__value">100 ₽</dd>
           </dl>
-          <div class="additional-products__button"><a href="#">Заказать</a></div>
+          <div class="additional-products__button">
+            <a class="additional-products__link" href="#">Заказать</a>
+          </div>
         </li>
 
         <li class="additional-products__item">
@@ -307,7 +316,7 @@
             <dt class="additional-products__package">1 упаковка (30 г)</dt>
             <dd class="additional-products__value">300 ₽</dd>
           </dl>
-          <div class="additional-products__button"><a href="#">Заказать</a></div>
+          <div class="additional-products__button"><a class="additional-products__link" href="#">Заказать</a></div>
         </li>
       </ul>
 
@@ -333,37 +342,48 @@
     </form>
 
     <section class="address">
-      <h3 class="address__slogan">приглашаем к сотрудничеству дилеров!</h3>
-      <p class="address__text">Пул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург</p>
-      <img class="address__map" src="images/map-pin.png-mobile2x@1x.png" srcset="images/map-pin.png-mobile2x@2x.png" alt="Точка на карте где мы находимся" width="56" height="52">
+      <div class="address__box">
+        <h3 class="address__text">приглашаем
+          к сотрудничеству
+          дилеров!</h3>
+
+        <address class="address__subject">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </address>
+      </div>
+
+      <div class="address__map">
+
+        <span class="address__card"><!-- Отметка на карте как найти нас --></span>
+
+      </div>
     </section>
 
     <footer class="footer">
       <h3 class="footer__slogan">
-        <a class="footer__link-home" href="#"><em>CAT</em> ENERGY</a>
+        <a class="footer__link-home hidden" href="#"><em>CAT</em> ENERGY</a>
       </h3>
       <ul class="footer__list">
         <li class="footer_item">
           <a class="footer_link-social" href="#">
-            <span class="footer__vk">мы в VK</span></a>
+            <span class="footer__vk hidden">мы в VK</span></a>
         </li>
 
         <li class="footer_item">
           <a class="footer_link-social" href="#">
-            <span class="footer__youtube">мы в Youtube</span></a>
+            <span class="footer__youtube hidden">мы в Youtube</span></a>
         </li>
 
         <li class="footer_item">
           <a class="footer_link-social" href="#">
-            <span class="footer__telegram">мы в Telegram</span></a>
+            <span class="footer__telegram hidden">мы в Telegram</span></a>
         </li>
       </ul>
 
       <a class="footer__link-html" href="#">
         <p class="footer__text-html">HTML Academy</p>
-
       </a>
 
     </footer>

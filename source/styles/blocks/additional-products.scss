@@ -1,5 +1,9 @@
 .additional-products {
   text-decoration: none;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: repeat(5) 90px 904px;
+  margin: 0;
 }
 
 .additional-products__slogan {
@@ -9,8 +13,7 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
-  border: 2px solid #68b738;
-  border-width: 34px 0;
+  border-bottom: 1px solid #68b738;
 }
 
 .additional-products__list {
@@ -19,6 +22,8 @@
 
 .additional-products__item {
   border-top: 1px solid #cdcdcd;
+  list-style-type: none;
+  width: 280px;
 }
 
 .additional-products__word {
@@ -26,11 +31,14 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .additional-products__cell {
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
@@ -48,16 +56,27 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  text-align: center;
+  text-align: right;
   color: #444444;
+  width: 37px;
+  height: 14px;
 }
 
 .additional-products__button {
   background-color: #68b738;
-  color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
+  height: 40px;
+  width: 280px;
+  text-transform: uppercase;
+}
+
+.additional-products__link {
+  text-decoration: none;
+  color: #ffffff;
+  width: 280px;
+  height: 40px;
 }

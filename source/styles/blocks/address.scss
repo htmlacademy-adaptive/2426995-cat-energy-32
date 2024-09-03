@@ -1,25 +1,29 @@
 .address {
   width: 320px;
-  height: 112px;
+  height: 474px;
 }
 
 .address__box {
   width: 320px;
   height: 112px;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 60px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .address__text {
-  width: 140px;
-  height: 60px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .address__subject {
-  width: 140px;
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -29,12 +33,20 @@
 }
 
 .address__map {
+  display: block;
   width: 320px;
   height: 362px;
+  background-image: url("../../images/map-SPB-mobile2x@1x.jpg");
+  position: relative;
+  right: 20px;
 }
 
 .address__card {
+  display: block;
   width: 57px;
   height: 53px;
   background-image: url("../../images/map-pin.png-mobile2x@1x.png");
+  position: relative;
+  top: 140px;
+  left: 140px;
 }

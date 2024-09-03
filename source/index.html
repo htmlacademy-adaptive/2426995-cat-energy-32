@@ -25,8 +25,13 @@
           <source media="(min-width: 768px)" srcset="images/logo-tablet2x-heder@1x.jpg 1x, images/logo-tablet2x-heder@2x.jpg 2x" type="images/jpg" width="33" height="38">
           <img class="main-header__logo-image" src="images/index-logo-mobile@1x.jpg" srcset="images/index-logo-mobile@2x.jpg" alt="Логотип" width="33" height="38">
         </picture>
+        <picture>
+          <source media="(min-width:1440px)" width="101" height="18" srcset="images/CATENERGY@1x.jpg 1x, images/CATENERGY@2x.jpg 2x" type="images/jpg">
+          <source media="(min-width:768px)" width="101" height="18" srcset="images/CATENERGY@1x.jpg 1x, images/CATENERGY@2x.jpg 2x" type="images/jpg">
+          <img class="main-header__logo-img" width="101" height="18" src="images/CATENERGY@1x.jpg" alt="Логотип CATENERGY">
+        </picture>
         <span class="main-header__logo-word">
-          <em class="main-header__em">CAT</em>ENERGY</span>
+          <em class="main-header__em hidden">CATENERGY</em></span>
       </a>
     </div>
 
@@ -36,8 +41,8 @@
       </button>
 
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#">Главная</a></li>
-        <li class="main-nav__item"><a href="#">Каталог продукции</a></li>
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог продукции</a></li>
         <li class="main-nav__item"><a href="#">Подбор программы</a></li>
       </ul>
 
@@ -47,10 +52,10 @@
   <main class="main-page">
 
     <section class="content-page">
-
-      <h1 class="content-page__price section-title">Функциональное питание для котов</h1>
-      <p class="content-page__slogan">Занялся собой? Займись котом!</p>
-
+      <div class="content-page__box">
+        <h1 class="content-page__price section-title">Функциональное питание для котов</h1>
+        <p class="content-page__slogan">Занялся собой? Займись котом!</p>
+      </div>
       <a class="content-page__button" href="#">подобрать программу</a>
       <picture>
         <source media="(min-width: 1440px)" srcset="images/index-cat-h1-desktop@1x.png 1x, images/index-cat-h1-desktop@2x.png 2x" type="images/png" width="522" height="499">
@@ -66,19 +71,16 @@
         <li class="content-price__item">
           <h2 class="content-price__title">похудение</h2>
           <p class="content-price__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <span class="content-price__img-skinny hidden">Стройный силует кошки</span>
 
-          <a class="content-price__link" href="#">каталог slim
-            <span class="content-price__content-icon hidden">-></span></a>
+          <a class="content-price__link content-price__icon" href="#">каталог slim</a>
+
         </li>
 
         <li class="content-price__item">
           <h2 class="content-price__title">набор массы</h2>
           <p class="content-price__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <span class="content-price__img-fat hidden">Стройный силует кошки</span>
 
-          <a class="content-price__link" href="#">каталог pro
-            <span class="content-price__content-icon  hidden">-></span></a>
+          <a class="content-price__link content-price__icon" href="#">каталог pro></a>
 
         </li>
       </ul>
@@ -88,9 +90,9 @@
 
       <h3 class="method__word">Как это работает</h3>
       <ul class="method__list">
-        <li class="method__item">
+        <li class="method__item ">
 
-          <span class="method__image">Иконка Листа</span>
+          <span class="method__image method__image--icon-plant"><!-- Иконка Листа --></span>
 
           <p class="method__text">Функциональное питание
             содержит только полезные
@@ -100,7 +102,7 @@
 
         <li class="method__item">
 
-          <span class="method__image">Иконка кипящей воды</span>
+          <span class="method__image method__image--icon-shower"><!-- Иконка кипящей воды --></span>
 
           <p class="method__text">Выпускается в виде порошка,
             который нужно лишь залить
@@ -109,7 +111,7 @@
 
         <li class="method__item">
 
-          <span class="method__image">Иконка прием пищи</span>
+          <span class="method__image method__image--icon-eat"><!-- Иконка прием пищи --></span>
 
           <p class="method__text">Замените один-два приема
             обычной еды на наше
@@ -118,7 +120,7 @@
 
         <li class="method__item">
 
-          <span class="method__image">Иконка времени</span>
+          <span class="method__image  method__image--icon-oclock"><!-- Иконка времени --></span>
 
           <p class="method__text">Уже через месяц наслаждайтесь
             изменениями к лучшему
@@ -184,13 +186,13 @@
         <address class="address__subject">
           ул. Большая
           Конюшенная, д. 19/8
-
-          Санкт-Петербург</address>
+          Санкт-Петербург
+        </address>
       </div>
 
       <div class="address__map">
 
-        <span class="address__card">Отметка на карте как найти нас</span>
+        <span class="address__card"><!-- Отметка на карте как найти нас --></span>
 
       </div>
     </section>
@@ -219,7 +221,6 @@
 
     <a class="footer__link-html" href="#">
       <p class="footer__text-html">HTML Academy</p>
-
     </a>
 
   </footer>

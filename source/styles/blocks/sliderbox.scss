@@ -1,19 +1,53 @@
+.sliderbox {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .sliderbox__img {
   width: hug (280px)px;
   height: hug (256px)px;
+  border-right: 4px solid #666666;
+}
+
+.sliderbox__img:hover {
+  border-color: #68b738;
+}
+
+.sliderbox__img:focus {
+  border-color: #68b738;
 }
 
 .sliderbox__button {
   width: 40px;
   height: 40px;
-  padding: "11px 8px 11px 8px";
-  border-radius: "20px 0px 0px 0px";
-  border: 2px 0 0 0;
+  border: 2px solid #666666;
+  border-radius: 20px;
+}
+
+.sliderbox__button:hover {
+  border-color: #68b738;
+}
+
+.sliderbox__button:focus {
+  border-color: #68b738;
 }
 
 .sliderbox__scroll {
-  width: fixed (4px)px;
-  height: fixed (256px)px;
-  border-radius: "2px 0px 0px 0px";
+  display: block;
+  width: 24px;
+  height: 18px;
+  border-radius: "20px 0px 0px 0px";
   border-color: #666666;
+  border: 2px solid #666666;
+  mask-image: url("../../icons/stack.svg#slayder-arrow");
+  mask-repeat: no-repeat;
+  background-color: #666666;
+}
+
+.sliderbox__scroll:hover {
+  background-color: #68b738;
+}
+
+.sliderbox__scroll:focus {
+  background-color: #68b738;
 }
