@@ -1,0 +1,30 @@
+.main-nav {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-nav__button {
+  background-image: url("../../icons/stack.svg#open-menu-header");
+  width: 24px;
+  height: 24px;
+  border: none;
+  position: relative;
+  left: 180px;
+  bottom: 30px;
+}
+
+.main-nav__list {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  text-decoration: none;
+  color: #000000;
+}

@@ -1,0 +1,87 @@
+.content-price {
+  text-decoration: none;
+}
+
+.content-price__list {
+  text-decoration: none;
+}
+
+.content-price__item {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.content-price__item:nth-child(1n) {
+  background-image: url("../../icons/cat_back_slim.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+}
+
+.content-price__item:nth-child(2n) {
+  background-image: url("../../icons/cat_back-pro.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
+}
+
+.content-price__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-left: 80px;
+}
+
+.content-price__text {
+  width: 227px;
+  height: 90px;
+  top: 596px;
+  left: 40px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+.content-price__img-skinny {
+  width: 50px;
+  height: 53px;
+  top: 521px;
+  left: 40px;
+}
+
+.content-price__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.content-price__icon::after {
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-repeat: no-repeat;
+  mask-size: 32px 10px;
+  background-color: #000000;
+  mask-position: 56px;
+}
+
+.content-price__icon::after:active {
+  mask-image: url("../../icons/stack.svg#arrow");
+  mask-repeat: no-repeat;
+}
+
+.content-price__icon::after:hover {
+  mask-image: url("../../icons/stack.svg#arrow-hover");
+  mask-repeat: no-repeat;
+}
+
+.content-price__icon::after:focus {
+  mask-image: url(".../../icons/stack.svg#arrow-focus");
+  mask-repeat: no-repeat;
+}
