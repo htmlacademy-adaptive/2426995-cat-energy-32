@@ -8,20 +8,11 @@
   list-style-type: none;
   width: 280px;
   height: 209px;
-  grid-template-columns: 140px 76px 76px;
-  grid-row: 70px 70px 40px;
-  grid-template-areas:
-    "card__link-image card__caption     ."          "card__link-image card__card__items card__items"
-    "card__button     card__button      card__button";
 }
 
-.card__link-image {
-  grid-area: card__link-image;
-  place-items: center center;
-}
 
 .card__caption {
-  grid-area: card__caption;
+
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -46,17 +37,6 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
-  grid-area: card__items;
-  display: grid;
-  grid-column: 36px 36px;
-  grid-row: 16px 16px 16px;
-  grid-template-areas:
-    "characteristic value"
-    "characteristic value"
-    "characteristic value";
-  justify-content: space-between;
-  position: relative;
-  right: 80px;
 }
 
 .card__characteristic {

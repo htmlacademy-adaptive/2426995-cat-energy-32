@@ -4,23 +4,48 @@
 
 .content-price__list {
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    grid-template-columns: 709px;
+    grid-row: 120px 20px 54px 609px;
+  }
 }
 
 .content-price__item {
   text-decoration: none;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "title background-image"
+      "text  background-image"
+      "link  background-image";
+    grid-column: 340px 360px;
+    grid-row: 709px 709px 709px;
+  }
 }
 
-.content-price__item:nth-child(1n) {
+.content-price__item::after:nth-child(1n) {
   background-image: url("../../icons/cat_back_slim.svg");
   background-repeat: no-repeat;
   background-size: 50px 53px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 200px 200px;
+    position: relative;
+  }
 }
 
-.content-price__item:nth-child(2n) {
+.content-price__item::after:nth-child(2n) {
   background-image: url("../../icons/cat_back-pro.svg");
   background-repeat: no-repeat;
   background-size: 67px 50px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 200px;
+  }
 }
 
 .content-price__title {

@@ -1,10 +1,150 @@
 .main-header {
-  text-decoration: none;
+  position: relative;
+  padding: 13px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (max-width: $mobile-width-max) {
+    &.main-header--nojs {
+      border-bottom: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 25px 0;
+    width: $content-width-tablet;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 0 30px;
+    width: $content-width-desktop;
+  }
 }
 
-.main-header__logo-word {
-  background-image: url("../../images/CATENERGY@1x.jpg");
-  position: absolute;
-  background-color: #cccccc;
-  border-bottom: 1px solid #d9d9d9;
+.main-header__logo-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: $content-width-mobile;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    width: unset;
+    padding-bottom: 0;
+    margin: 0;
+  }
 }
+
+.main-header__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__nav {
+  width: 100%;
+  flex-shrink: 0;
+  // align-self: center;
+  display: none;
+
+  @media (max-width: $mobile-width-max) {
+    .main-header--nojs & {
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 5px;
+    flex-shrink: 1;
+    max-width: 500px;
+    width: unset;
+    margin-left: auto;
+    margin-right: -7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
+  }
+}
+
+.main-header__nav--open {
+  display: block;
+
+  @media (max-width: $mobile-width-max) {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background-color: $bg-basic-color;
+
+    .main-header--nojs & {
+      position: static;
+      width: 100%;
+    }
+  }
+}
+
+.main-header__menu-toggle {
+  display: block;
+  margin-right: -5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $mobile-width-max) {
+    .main-header--nojs & {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  &::before {
+    @include icon(24px, 24px, "menu-open");
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__menu-toggle--close::before {
+  @include icon-bg-image("menu-close");
+}
+
+.main-header__logo-text {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
+}
+
+// .index-header__hero {
+// }
