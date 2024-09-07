@@ -1,0 +1,14 @@
+// .page {
+// }
+
+.page__body {
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $text-color;
+  background-color: $bg-basic-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

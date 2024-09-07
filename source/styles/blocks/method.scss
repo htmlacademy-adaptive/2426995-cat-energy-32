@@ -1,0 +1,76 @@
+.method {
+  text-decoration: none;
+}
+
+.method__word {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.method__list {
+  list-style-type: none;
+  display: grid;
+}
+
+.method__item {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 60px 220px;
+  gap: 20px;
+}
+
+.method__image {
+  display: grid;
+  width: 60px;
+  height: 60px;
+}
+
+.method__image--icon-plant {
+  background-image: url("../../icons/stack.svg#plant");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  background-color: hsl(97, 53%, 47%);
+  background-position: center;
+}
+
+.method__image--icon-shower {
+  background-image: url("../../icons/stack.svg#shower");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  background-color: hsl(97, 53%, 47%);
+  background-position: center;
+}
+
+.method__image--icon-eat {
+  background-image: url("../../icons/stack.svg#eat");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  background-color: hsl(97, 53%, 47%);
+  background-position: center;
+}
+
+.method__image--icon-oclock {
+  background-image: url("../../icons/stack.svg#oclok");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  background-color: hsl(97, 53%, 47%);
+  background-position: center;
+}
+
+
+.method__text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #444444;
+  width: 200px;
+  height: 54px;
+}

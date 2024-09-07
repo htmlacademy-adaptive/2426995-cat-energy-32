@@ -1,0 +1,82 @@
+.additional-products {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: repeat(5) 90px 904px;
+  margin: 0;
+}
+
+.additional-products__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  border-bottom: 1px solid #68b738;
+}
+
+.additional-products__list {
+  text-decoration: none;
+}
+
+.additional-products__item {
+  border-top: 1px solid #cdcdcd;
+  list-style-type: none;
+  width: 280px;
+}
+
+.additional-products__word {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional-products__cell {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.additional-products__package {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: #444444;
+}
+
+.additional-products__value {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: right;
+  color: #444444;
+  width: 37px;
+  height: 14px;
+}
+
+.additional-products__button {
+  background-color: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  height: 40px;
+  width: 280px;
+  text-transform: uppercase;
+}
+
+.additional-products__link {
+  text-decoration: none;
+  color: #ffffff;
+  width: 280px;
+  height: 40px;
+}

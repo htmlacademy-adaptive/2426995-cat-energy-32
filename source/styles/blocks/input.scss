@@ -1,0 +1,14 @@
+.input {
+  padding: 13px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $input-color;
+  border: 1px solid $input-border;
+  text-transform: uppercase;
+
+  &:placeholder-shown {
+    color: $input-color;
+  }
+}

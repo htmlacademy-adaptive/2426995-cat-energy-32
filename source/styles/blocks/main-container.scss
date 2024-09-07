@@ -1,0 +1,15 @@
+.main-container {
+  flex-grow: 1;
+}
+
+.main-container__title {
+  margin: 27px 0 41px;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px 0 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 45px 0 85px;
+  }
+}
