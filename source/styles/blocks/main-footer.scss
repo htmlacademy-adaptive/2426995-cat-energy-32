@@ -1,0 +1,83 @@
+$footer-element-padding: 20px;
+$footer-element-separator: 1px solid $separator-color;
+
+.main-footer {
+  background-color: $bg-primary-color;
+  padding: 16px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 38px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 0;
+  }
+}
+
+.main-footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.main-footer__logo {
+  display: flex;
+  justify-content: center;
+  padding: $footer-element-padding 0;
+  border-bottom: $footer-element-separator;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+    border: none;
+  }
+}
+
+.main-footer__social {
+  padding: 12px 0;
+  border-bottom: $footer-element-separator;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-footer__partner {
+  padding: $footer-element-padding 0;
+}
+
+.main-footer__partner-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  color: $text-secondary-color;
+
+  &::after {
+    @include icon-mask(27px,34px,"html-academy");
+    background-color: $icon-color;
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background-color: $icon-color-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      background-color: $icon-color-hover;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
+}

@@ -1,0 +1,85 @@
+.compare-slider {
+  width: 280px;
+  height: 256px;
+  display: flex;
+  position: relative;
+  justify-items: center;
+
+  & picture {
+    display: contents;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.compare-slider__image {
+  display: block;
+  height: 100%;
+
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.compare-slider__image--before {
+  object-position: left;
+  justify-self: start;
+}
+
+.compare-slider__image--after {
+  object-position: right;
+  justify-self: end;
+}
+
+.compare-slider__control-button {
+  --color: #{$icon-color};
+
+  display: block;
+  height: 100%;
+  width: 4px;
+  padding: 0;
+  color: var(--color);
+  background-color: var(--color);
+  border: none;
+  border-radius: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+
+  &::after {
+    @include icon-mask(24px,18px,"slider-control");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color);
+    cursor: pointer;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: $button-color;
+    border: 2px solid var(--color);
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus-visible {
+    --color: #{$icon-color-hover};
+  }
+
+  &:active {
+    --color: #{$icon-color-active};
+  }
+}
