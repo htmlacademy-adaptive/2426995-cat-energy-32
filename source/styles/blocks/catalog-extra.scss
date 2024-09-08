@@ -1,0 +1,136 @@
+$catalog-separator-color:#cdcdcd;
+
+.catalog-extra {
+  padding: 10px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0;
+  }
+}
+
+.catalog-extra__title {
+  margin-top: 14px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+    margin-bottom: 75px;
+  }
+}
+
+.catalog-extra__inner-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    gap: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-flow: row wrap;
+    gap: 80px;
+  }
+}
+
+.catalog-extra__list {
+  @include list();
+
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+.catalog-extra__item {
+  border-top: 1px solid $catalog-separator-color;
+  padding: 13px 0 18px;
+
+  &:last-of-type {
+    border-bottom: 1px solid $catalog-separator-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 38px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+    border: 1px solid $catalog-separator-color;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 17px;
+  }
+}
+
+@mixin catalog-extra-bg-image($device) {
+  $image: "../../images/promotion_cat_background-"+$device;
+
+  background-image:
+    linear-gradient(rgba($bg-secondary-color, 0.85),
+    rgba($bg-secondary-color, 0.85)),
+    image-set(
+      url($image+"@1x.webp") type("image/webp") 1x,
+      url($image+"@2x.webp") type("image/webp") 2x,
+      url($image+"@1x.jpg") type("image/jpeg") 1x,
+      url($image+"@2x.jpg") type("image/jpeg") 2x
+    );
+}
+
+.catalog-extra__promotion {
+  @include catalog-extra-bg-image("mobile");
+  /* background-image:
+    linear-gradient(rgba($bg-secondary-color, 0.85),
+    rgba($bg-secondary-color, 0.85)),
+    url("../../images/promotion_cat_background-mobile@1x.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 290px;
+
+  @media (min-width: $tablet-width) {
+    @include catalog-extra-bg-image("tablet");
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include catalog-extra-bg-image("desktop");
+    width: 245px;
+    min-height: 288px;
+    flex-shrink: 1;
+  }
+}
+
+.catalog-extra__promotion-text {
+  margin: 0;
+  padding: 42px;
+
+  font-family: $font-secondary;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: $text-with-bg-color;
+
+  &::before {
+    @include icon(78px,81px,"gift");
+    margin: 15px auto  48px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 56px 125px 56px 78px;
+    text-align: left;
+
+    &::before {
+      margin: 0;
+    }
+  }
+}

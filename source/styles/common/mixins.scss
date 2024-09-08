@@ -1,19 +1,77 @@
-@mixin font-face ($font-family, $font-weight,$font-style, $font-src) {
+@mixin font-face($font-family, $font-src, $font-weight: 400, $font-style: normal) {
   @font-face {
     font-family: $font-family;
     font-weight: $font-weight;
     font-style: $font-style;
-    src: $font-src;
     font-display: swap;
+    src: $font-src;
   }
 }
 
-@mixin main-hedaer ($font-family, $font-weight, $font-style, $font-src ) {
-  @font-face {
-    font-family: $font-family;
-    font-weight: $font-weight;
-    font-style: $font-style;
-    src: $font-src;
-    font-display: swap;
+@mixin text() {
+  font-family: $font-secondary;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+}
+
+@mixin list() {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin icon($width, $height, $id:"", $position-x:center, $position-y:center) {
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
+
+  @if $id != "" {
+    background-image: url("../../icons/stack.svg#"+$id);
+  }
+  background-position-x: $position-x;
+  background-position-y: $position-y;
+  background-repeat: no-repeat;
+}
+
+@mixin icon-bg-image($id) {
+  background-image: url("../../icons/stack.svg#"+$id);
+}
+
+@mixin icon-mask($width, $height, $id:"", $position-x:center, $position-y:center) {
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
+
+  @if $id != "" {
+    mask-image: url("../../icons/stack.svg#"+$id);
+  }
+  mask-position: $position-x $position-y;
+  mask-repeat: no-repeat;
+}
+
+@mixin icon-mask-image($id) {
+  mask-image: url("../../icons/stack.svg#"+$id);
+}
+
+@mixin container() {
+  width: $content-width-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    width: $content-width-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $content-width-desktop;
   }
 }

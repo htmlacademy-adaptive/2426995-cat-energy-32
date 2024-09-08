@@ -1,0 +1,47 @@
+.button {
+  display: block;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: $button-bg-color;
+  color: $button-color;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $button-bg-color-hover;
+    color: $button-color-hover;
+  }
+
+  &:active {
+    background-color: $button-bg-color-active;
+    color: $button-color-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.button--secondary {
+  background-color: $button-secondary-bg-color;
+  color: $button-secondary-color;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $button-secondary-bg-color-hover;
+    color: $button-secondary-color;
+  }
+
+  &:active {
+    background-color: $button-secondary-bg-color-active;
+    color: $button-secondary-color;
+  }
+}

@@ -1,0 +1,101 @@
+// .features {
+// }
+
+.features__title {
+  margin: 0;
+  padding-bottom: 40px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1em;
+    padding-bottom: 30px;
+  }
+}
+
+.features__list {
+  @include list();
+  padding-bottom: 49px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+  counter-reset: marker 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 37px max(10px, ($content-width-tablet - 325px*2 - 1));
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 37px 80px;
+    padding-bottom: 20px;
+  }
+}
+
+.features__item {
+  @include text();
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: $text-secondary-color;
+  counter-increment: marker 1;
+
+  &::before {
+    @include icon(60px, 60px);
+    flex-shrink: 0;
+    background-color: $bg-secondary-color;
+    background-size: 26px 30px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 115px;
+      z-index: -1;
+      content: counter(marker);
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 1em;
+      color: $bg-primary-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    width: 325px;
+    padding: 40px 80px 40px 0;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding-right: 0;
+  }
+}
+
+.features__item--icon-leaf::before {
+  @include icon-bg-image("leaf");
+}
+
+.features__item--icon-water::before {
+  @include icon-bg-image("water");
+}
+
+.features__item--icon-eat::before {
+  @include icon-bg-image("eat");
+}
+
+.features__item--icon-clock::before {
+  @include icon-bg-image("clock");
+}

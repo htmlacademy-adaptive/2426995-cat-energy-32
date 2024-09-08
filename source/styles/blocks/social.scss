@@ -1,0 +1,46 @@
+// .social {
+// }
+
+.social__list {
+  @include list();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+// .social__item {
+// }
+
+.social__link {
+  --color: #{$icon-color};
+  display: block;
+  color: var(--color);
+
+  &::before {
+    @include icon-mask(40px,40px);
+    background-color: var(--color);
+    mask-size: 27px 18px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    --color: #{$icon-color-hover};
+  }
+
+  &:active {
+    --color: #{$icon-color-active};
+  }
+}
+
+.social__link--icon-vk::before {
+  @include icon-mask-image("vk");
+}
+
+.social__link--icon-yt::before {
+  @include icon-mask-image("yt");
+}
+
+.social__link--icon-tg::before {
+  @include icon-mask-image("tg");
+}
