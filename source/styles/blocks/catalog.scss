@@ -1,0 +1,30 @@
+$catalog-separator-color:#ebebeb;
+// .catalog {
+// }
+
+.catalog__list {
+  @include list();
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    max-width: $content-width-tablet;
+    margin-inline: auto;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $content-width-desktop;
+    gap: 63px 80px;
+  }
+  border-collapse: collapse;
+}
+
+.catalog__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #000000;
+}
